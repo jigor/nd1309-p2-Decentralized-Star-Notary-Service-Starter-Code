@@ -5,6 +5,16 @@
 This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
 
 
+Truffle v5.4.9 (core: 5.4.9)
+Solidity v0.5.16 (solc-js)
+openzeppelin-solidity v2.3
+Node v10.19.0
+Web3.js v1.5.2
+Token name : "StarToken"
+Token symbol : "STR"
+Token address : 0x41C0B3fa69D22c7Ad02f12fCD85079D468e85116
+
+If truffle-config.js file set your Infura key and set Metamask mnemonic in .secret file in project root folder
 
 ### Dependencies
 For this project, you will need to have:

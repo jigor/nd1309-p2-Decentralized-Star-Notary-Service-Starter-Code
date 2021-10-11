@@ -22,11 +22,11 @@
  *
  */
 
-// const HDWallet = require('truffle-hdwallet-provider');
-// const infuraKey = "fj4jll3k.....";
-//
-// const fs = require('fs');
-// const mnemonic = fs.readFileSync(".secret").toString().trim();
+//const HDWalletProvider = require('truffle-hdwallet-provider');
+const infuraKey = "<YOUR INFURA KEY>";
+const HDWalletProvider = require("truffle-hdwallet-provider");
+const fs = require('fs');
+const mnemonic = fs.readFileSync(".secret").toString().trim();
 
 module.exports = {
   /**
@@ -51,7 +51,23 @@ module.exports = {
       port: 9545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
-
+    rinkeby: {
+      networkCheckTimeout: 100000,
+      provider: function() { 
+       return new HDWalletProvider(mnemonic, "https://rinkeby.infura.io/v3/"+infuraKey);
+      },
+      network_id: 4,
+      gas: 4500000,
+      gasPrice: 10000000000,
+    }
+    // rinkeby: {
+    //   networkCheckTimeout: 10000, 
+    //   provider: () => new HDWalletProvider('tray mystery laundry tool age razor purity state exchange filter trouble elbow',
+    //                                        'https://rinkeby.infura.io/v3/680204b9f77b4cbd9611d49ad22f3b63'),
+    //     network_id: 4,       // rinkeby's id
+    //     gas: 4500000,        // rinkeby has a lower block limit than mainnet
+    //     gasPrice: 10000000000
+    // },
     // Another network with more advanced options...
     // advanced: {
       // port: 8777,             // Custom port
