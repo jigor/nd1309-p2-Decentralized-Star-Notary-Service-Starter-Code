@@ -1,10 +1,6 @@
 # ND1309 C2 Ethereum Smart Contracts, Tokens and Dapps - Project Starter
 
-**PROJECT: Decentralized Star Notary Service Project** - For this project, you will create a DApp by adding functionality with your smart contract and deploy it on the public testnet.
-
-### ToDo
-
-This Starter Code has already implemented the functionalities you implemented in the StarNotary (Version 2) exercise, and have comments in all the files you need to implement your tasks.
+### 
 
 ### Software versions
 
@@ -25,6 +21,8 @@ This Starter Code has already implemented the functionalities you implemented in
 - Token symbol : "STR"
 
 - Token address : 0x41C0B3fa69D22c7Ad02f12fCD85079D468e85116
+
+- Etherscan link :  https://rinkeby.etherscan.io/token/0x41C0B3fa69D22c7Ad02f12fCD85079D468e85116
 
 In truffle-config.js file set your Infura key and set Metamask mnemonic in .secret file in project root folder
 
@@ -54,11 +52,11 @@ For this project, you will need to have:
    truffle version
    ```
 
-2. **Metamask: 5.3.1** - If you need to update Metamask just delete your Metamask extension and install it again.
+3. **Metamask: 5.3.1** - If you need to update Metamask just delete your Metamask extension and install it again.
 
-3. [Ganache](https://www.trufflesuite.com/ganache) - Make sure that your Ganache and Truffle configuration file have the same port.
+4. [Ganache](https://www.trufflesuite.com/ganache) - Make sure that your Ganache and Truffle configuration file have the same port.
 
-4. **Other mandatory packages**:
+5. **Other mandatory packages**:
    
    ```bash
    cd app
